@@ -1,0 +1,10 @@
+{
+    "/GestionDePedidos/*":{
+        "target":"https://alexandrasoft.com.ar/AppPedidosDeVendedores",
+        "secure":true,
+        "loglevel":"debug",
+        "changeOrigin":true
+        
+    }
+
+}

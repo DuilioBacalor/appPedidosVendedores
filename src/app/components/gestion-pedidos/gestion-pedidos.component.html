@@ -1,0 +1,101 @@
+<!-- <div *ngIf="!resultadoPeticion ; else divPedido"
+    class="alert alert-info">
+Espere por favor...
+
+</div> -->
+<!-- <ng-template #divPedido> -->
+    
+    <!-- <div class="bloque" style="background-color:#f3efef;">  -->
+        
+        <!-- <div class="bloque" style="background-color:#014481;">  -->
+        
+
+<!-- <label><input type="checkbox" id="cbox1"  > Todos los pedidos</label><br>
+<label><input type="checkbox" id="cbox1"  > Pedidos facturados</label><br>    
+<label><input type="checkbox" id="cbox1" > Pedidos no facturados</label> -->
+
+
+<!-- <button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-secondary">Secondary</button>
+
+<br>
+<button type="button" class="btn btn-success">Success</button>
+<button type="button" class="btn btn-danger">Danger</button>
+<button type="button" class="btn btn-warning">Warning</button>
+<button type="button" class="btn btn-info">Info</button> -->
+
+
+<!-- <button type="button" class="btn btn-light">
+    
+    <img src="./assets/Pedidos.png" height ="80" width="100" alt="Imagen no encontrada"/>
+    <br>
+
+
+</button> -->
+<!-- <button type="button" class="btn btn-dark">Dark</button>
+
+<button type="button" class="btn btn-link">Link</button>
+
+
+
+<button type="button" class="btn btn-outline-primary">Primary</button>
+<button type="button" class="btn btn-outline-secondary">Secondary</button>
+<button type="button" class="btn btn-outline-success">Success</button>
+<button type="button" class="btn btn-outline-danger">Danger</button>
+<button type="button" class="btn btn-outline-warning">Warning</button>
+<button type="button" class="btn btn-outline-info">Info</button>
+<button type="button" class="btn btn-outline-light">Light</button>
+<button type="button" class="btn btn-outline-dark">Dark</button> -->
+
+<!-- </div> -->
+<br>
+<div class="bloque">
+    <button (click)="get()" >Buscar pedidos</button>
+    <!-- <button  >Buscar pedidos</button> -->
+ 
+</div>
+
+<br>
+<hr>
+<br>
+    
+<div class="row">
+
+    <div class="col">
+       
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Codigo pedido</th>
+                    <th>Codigo cliente</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th></th>
+                
+                </tr>
+
+            </thead>
+            <tbody>
+                    <tr   *ngFor="let pedido of resultadoPeticiones; let i=index">
+                    <td> {{i + 1}}</td>
+                    <td > 
+                        {{pedido[0]}}</td>
+                    <td>{{pedido[1]}},{{pedido[2]}}</td>
+                    <td>{{pedido[3]}}</td>
+                    <td>
+                        {{pedido[4]}}
+
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div> 
+
+</div> 
+<!-- </ng-template> -->
+
+
+ <!-- <h1>{{resultadoPeticion|json}}</h1>--> 
